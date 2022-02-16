@@ -168,8 +168,35 @@ $faqs = [
 
     <!-- FOOTER -->
     <footer>
+        <div class="container-fluid">
+            <div class="container d-flex justify-content-between">
 
-        QUI VA IL MIO FOOTER
+                <!-- FOOTER LEFT -->
+                <div class="footer-left d-flex pt-2">
+                    <ul class="d-flex list-unstyled">
+                        <li><a href="#">Google <span>·</span></a></li>
+                        <li><a href="#">Tutto su Google <span>·</span></a></li>
+                        <li><a href="#">Privacy <span>·</span></a></li>
+                        <li><a href="#">Termini</a></li>
+                    </ul>
+                </div>
+                <!-- / FOOTER LEFT -->
+
+                <!-- FOOTER RIGHT -->
+                <div class="footer-right py-2">
+
+                    <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option selected>Lingue</option>
+                        <option value="1">Italiano</option>
+                        <option value="2">English</option>
+                        <option value="2">Français</option>
+                    </select>
+
+
+                </div>
+                <!-- / FOOTER RIGHT -->
+            </div>
+        </div>
 
     </footer>
     <!-- / FOOTER -->

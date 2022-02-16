@@ -28,3 +28,19 @@ header{
   font-weight: bold;
   text-decoration: none;
 }
+
+/* FOOTER */
+
+.footer-left a{
+  color: gray;
+  font-size: small;
+  text-decoration: none;
+}
+
+.footer-left li{
+  padding-left: 8px;
+}
+
+footer{
+  background-color: #f5f5f5;
+}
