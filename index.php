@@ -30,7 +30,7 @@ $faqs = [
             <ol>
                     <li>
                         La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
-                        <ol>
+                        <ol style="list-style: lower-alpha">
                             <li> 
                                 Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.
                             </li>
@@ -42,8 +42,8 @@ $faqs = [
                     <li>
                         La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.
                     </li>
-                </ol>
-            Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</div>'
+                </ol></div>
+            <div> Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</div>'
         ]
     ],
 
@@ -95,7 +95,7 @@ $faqs = [
         <br><br><br>
     </header>
 
-    <main> 
+    <main>
 
         <!-- section è  [
             'title' => '',
@@ -104,21 +104,23 @@ $faqs = [
                 ''
                 ]
         ] -->
-        
+
         <?php
 
-            foreach ($faqs as $section){
+        foreach ($faqs as $section) {
+
+            echo "<h2>{$section['title']}</h2><br>";                  // stampo i titles
+
+            foreach ($section['paragraph'] as $paragraph) {
+
+                echo "<div>{$paragraph}</div><br>";                   // stampo i paragraphs
                 
-                echo $section['title'];                 // stampo i titles
-                
-                foreach ($section['paragraph'] as $paragraph){
-                    echo $paragraph;                               // stampo i paragraphs
-                }
             }
+        }
 
         ?>
 
-    <br><br><br>
+        <br><br><br>
     </main>
 
     <footer>QUI VA IL MIO FOOTER</footer>
