@@ -94,7 +94,7 @@ $faqs = [
 <body>
 
     <!-- HEADER  -->
-    <header class="container-fluid">
+    <header class="container-fluid sticky-top">
         <!-- CONTAINER LOGO -->
         <div class="container-logo d-flex">
 
