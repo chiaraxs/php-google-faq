@@ -85,45 +85,94 @@ $faqs = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Google Faq</title>
 
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- LINK CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <header>QUI VA IL MIO HEADER
-        <br><br><br>
-    </header>
+    <!-- HEADER  -->
+    <header class="container-fluid">
+        <!-- CONTAINER LOGO -->
+        <div class="container-logo d-flex">
 
+            <div class="logo">
+                <img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Google-Logo.png" alt="">
+            </div>
+
+            <div class="text d-flex justify-content-center ms-3 mt-2">
+                <h5 class="text-muted fw-bold mt-4">Privacy e Termini</h5>
+            </div>
+
+        </div>
+        <!-- / CONTAINER LOGO -->
+
+        <!-- CONTAINER NAVBAR -->
+        <div class="container-navbar d-flex">
+            <ul class="d-flex list-unstyled">
+                <li class="px-3">
+                    <a href="#">Introduzione</a>
+                </li>
+                <li class="px-3">
+                    <a href="#">Norme sulla privacy</a>
+                </li>
+                <li class="px-3">
+                    <a href="#">Termini di servizio</a>
+                </li>
+                <li class="px-3">
+                    <a href="#">Tecnologie</a>
+                </li>
+                <li class="px-3">
+                    <a href="#">Domande frequenti</a>
+                </li>
+            </ul>
+
+        </div>
+        <hr>
+        <!-- / CONTAINER NAVBAR -->
+
+    </header>
+    <!-- / HEADER -->
+
+    <!-- MAIN -->
     <main>
 
         <!-- section è  [
-            'title' => '',
-            'paragraph' => [
-                ''
-                ''
-                ]
+        'title' => '',
+        'paragraph' => [
+            ''
+            ''
+            ]
         ] -->
 
+        <!-- php -->
         <?php
 
         foreach ($faqs as $section) {
 
-            echo "<h2>{$section['title']}</h2><br>";                  // stampo i titles
+            echo "<h2 class='container'>{$section['title']}</h2><br>";                  // stampo i titles
 
             foreach ($section['paragraph'] as $paragraph) {
 
-                echo "<div>{$paragraph}</div><br>";                   // stampo i paragraphs
-                
+                echo "<div class='container'>{$paragraph}</div><br>";                   // stampo i paragraphs
+
             }
         }
 
         ?>
-
-        <br><br><br>
+        <!-- / php -->
     </main>
+    <!-- / MAIN -->
 
-    <footer>QUI VA IL MIO FOOTER</footer>
+    <!-- FOOTER -->
+    <footer>
+
+        QUI VA IL MIO FOOTER
+
+    </footer>
+    <!-- / FOOTER -->
 
 
 

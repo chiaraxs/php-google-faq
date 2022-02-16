@@ -7,3 +7,19 @@ body {
 * {
   box-sizing: border-box;
 }
+
+
+/* HEADER */
+.logo{
+  width: 150px;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.container-navbar a{
+  color: gray;
+  font-weight: bold;
+  text-decoration: none;
+}
